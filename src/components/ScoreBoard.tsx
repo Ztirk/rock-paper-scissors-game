@@ -1,5 +1,3 @@
-import Cookies from "js-cookie";
-import { useEffect, useState } from "react";
 
 interface Props {
   score: number;

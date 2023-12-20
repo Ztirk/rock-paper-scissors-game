@@ -7,7 +7,7 @@ import { PickIcon } from "../assets/interfaces/interfaces";
 
 interface Props {
   type: PickIcon["type"];
-  pickIcon: PickIcon["type"];
+  pickIcon?: PickIcon["type"];
   onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
   battle?: true;
 }

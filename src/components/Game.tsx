@@ -3,7 +3,6 @@ import bgPentagon from "../assets/images/bg-pentagon.svg";
 import Icon from "./Icon";
 import { PickIcon } from "../assets/interfaces/interfaces";
 import IconFrame from "./IconFrame";
-import Cookies from "js-cookie";
 
 interface Props {
   setScore: React.Dispatch<React.SetStateAction<number>>;
@@ -48,7 +47,7 @@ export default function Game({ setScore }: Props) {
           setWinner("lose");
         }, 1000);
       }
-  }, [oppoPick, pickIcon]);
+  }, [oppoPick, pickIcon, setScore]);
 
   const handleClickIcon: (e: React.MouseEvent<HTMLDivElement>) => void = (
     e
